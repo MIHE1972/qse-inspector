@@ -1850,9 +1850,9 @@ header {
     h += '<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0 8px;">';
     h += '<div class="page-tag" style="margin:0;">' + t('hub_tag') + '</div>';
     h += '<div style="display:flex;gap:4px;">';
-    [['fr','🇫🇷'],['nl','🇧🇪'],['en','🇬🇧']].forEach(([lang, flag]) => {
+    [['fr','🇫🇷'],['nl','NL'],['en','🇬🇧']].forEach(([lang, label]) => {
       const active = state.lang === lang;
-      h += '<button style="font-size:16px;padding:3px 6px;border-radius:8px;border:2px solid ' + (active ? '#8b5cf6' : 'transparent') + ';background:' + (active ? '#f5f3ff' : 'transparent') + ';cursor:pointer;opacity:' + (active ? '1' : '0.55') + ';" data-action="set-lang" data-lang="' + lang + '">' + flag + '</button>';
+      h += '<button style="font-size:16px;padding:3px 6px;border-radius:8px;border:2px solid ' + (active ? '#8b5cf6' : 'transparent') + ';background:' + (active ? '#f5f3ff' : 'transparent') + ';cursor:pointer;opacity:' + (active ? '1' : '0.55') + ';" data-action="set-lang" data-lang="' + lang + '">' + label + '</button>';
     });
     h += '</div></div>';
 
